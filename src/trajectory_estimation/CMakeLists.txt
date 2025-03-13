@@ -12,6 +12,18 @@ find_package(nav_msgs REQUIRED)
 find_package(visualization_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 
+add_executable(trajectory_estimation src/trajectory_estimation.cpp)
+ament_target_dependencies(trajectory_estimation rclcpp nav_msgs visualization_msgs geometry_msgs)
+
+install(TARGETS trajectory_estimation
+  DESTINATION lib/${PROJECT_NAME}
+)
+
+install(
+  DIRECTORY launch config
+  DESTINATION share/${PROJECT_NAME}
+)
+
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights

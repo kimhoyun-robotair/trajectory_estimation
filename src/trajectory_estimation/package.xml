@@ -3,9 +3,12 @@
 <package format="3">
   <name>trajectory_estimation</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
-  <maintainer email="suberkut76@gmail.com">kimhoyun</maintainer>
-  <license>TODO: License declaration</license>
+  <description>
+    A package that predicts future trajectories using regression analysis based on odometry data
+  </description>
+  <maintainer email="suberkut76@gmail.com">kimhoyun-robotair</maintainer>
+  <license>MIT</license>
+  <license>Apache License 2.0</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
